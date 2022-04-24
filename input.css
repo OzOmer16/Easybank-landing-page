@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+   html{
+        @apply min-h-full p-0 m-0 box-border
+   }
+
+   body{
+        @apply min-h-full text-lg 
+   }
+
+   img{
+       @apply block
+   }
+
+   a{
+       @apply inline-block
+   }
+}
+
+
+@layer components {
+    .container{
+        @apply my-0 mx-auto max-w-6xl px-5
+    }
+
+  }
