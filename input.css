@@ -26,4 +26,24 @@
         @apply my-0 mx-auto max-w-6xl px-5
     }
 
+    .card-component{
+        @apply bg-white rounded-md overflow-hidden
+    }
+
+    .card-image{
+        @apply min-h-[195px] object-cover bg-center
+    }
+
+    .card-author{
+        @apply mt-5 text-xs text-neutralGrayishBlue
+    }
+
+    .card-title{
+        @apply mb-3 mt-2 text-xl
+    }
+
+    .card-content{
+        @apply text-neutralGrayishBlue text-[16px] leading-5  
+    }
+
   }
