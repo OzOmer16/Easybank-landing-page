@@ -39,11 +39,29 @@
     }
 
     .card-title{
-        @apply mb-3 mt-2 text-xl
+        @apply mb-3 mt-2 text-xl cursor-pointer hover:text-primaryLimeGreen
     }
 
     .card-content{
         @apply text-neutralGrayishBlue text-[16px] leading-5  
     }
+    
+    .child-margin > *:not(:last-child) {
+        @apply mb-3
+    }
+
+    .child-cursor > * {
+        @apply cursor-pointer
+    }
+
+    .li-child-hover > li:hover {
+        @apply text-primaryLimeGreen
+
+    }
+
+    .social-media-hover > a > svg > path:hover {
+        @apply fill-primaryLimeGreen
+    }
+
 
   }

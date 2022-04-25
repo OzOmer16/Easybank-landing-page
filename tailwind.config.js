@@ -21,6 +21,8 @@ module.exports = {
       },
       screens: {
         customMobile: { 'raw': '(max-width: 375px)' },
+        customTablet: { 'raw': '(max-width: 540px)' },
+        customLgTablet: { 'raw': '(max-width: 800px)' },
         container: { 'raw': '(max-width: 1152px)' },
         customDesktop: { 'raw': '(max-width: 1440px)' }
       }

@@ -558,8 +558,14 @@ a {
 .card-title {
   margin-bottom: 0.75rem;
   margin-top: 0.5rem;
+  cursor: pointer;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.card-title:hover {
+  --tw-text-opacity: 1;
+  color: hsl(136 65% 51% / var(--tw-text-opacity));
 }
 
 .card-content {
@@ -567,6 +573,23 @@ a {
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: hsl(233 8% 62% / var(--tw-text-opacity));
+}
+
+.child-margin > *:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.child-cursor > * {
+  cursor: pointer;
+}
+
+.li-child-hover > li:hover {
+  --tw-text-opacity: 1;
+  color: hsl(136 65% 51% / var(--tw-text-opacity));
+}
+
+.social-media-hover > a > svg > path:hover {
+  fill: hsl(136, 65%, 51%);
 }
 
 .sr-only {
@@ -701,8 +724,12 @@ a {
   margin-bottom: 1.25rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.ml-\[-130px\] {
+  margin-left: -130px;
 }
 
 .mt-2 {
@@ -807,10 +834,6 @@ a {
 
 .h-\[calc\(100\%-theme\(\"spacing\.1\"\)\)\] {
   height: calc(100% - 0.25rem);
-}
-
-.min-h-\[195px\] {
-  min-height: 195px;
 }
 
 .max-w-md {
@@ -1035,6 +1058,11 @@ a {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
 }
 
 .break-before-auto {
@@ -1314,6 +1342,18 @@ a {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -1699,6 +1739,11 @@ a {
   background-color: hsl(220 16% 96% / var(--tw-bg-opacity));
 }
 
+.bg-primaryDarkBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 26% 24% / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1810,10 +1855,6 @@ a {
   background-position: 150% 100%;
 }
 
-.bg-center {
-  background-position: center;
-}
-
 .bg-repeat {
   background-repeat: repeat;
 }
@@ -1848,6 +1889,10 @@ a {
 
 .bg-origin-content {
   background-origin: content-box;
+}
+
+.fill-white {
+  fill: #fff;
 }
 
 .fill-\[\#bada55\] {
@@ -1900,6 +1945,11 @@ a {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .px-1\.5 {
@@ -1988,8 +2038,9 @@ a {
   line-height: 1.75rem;
 }
 
-.text-\[16px\] {
-  font-size: 16px;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -2073,10 +2124,6 @@ a {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.leading-5 {
-  line-height: 1.25rem;
-}
-
 .text-neutralGrayishBlue {
   --tw-text-opacity: 1;
   color: hsl(233 8% 62% / var(--tw-text-opacity));
@@ -2085,6 +2132,11 @@ a {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-neutralVeryLightGray {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 98% / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2439,6 +2491,10 @@ a {
   font-weight: 700;
 }
 
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -2508,6 +2564,12 @@ a {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:flex-col {
+    flex-direction: column;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   @media (min-width: 1024px) {
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
@@ -2516,8 +2578,63 @@ a {
   }
 }
 
+@media (max-width: 540px) {
+  .customTablet\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .customTablet\:gap-12 {
+    gap: 3rem;
+  }
+
+  .customTablet\:text-center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .customLgTablet\:flex-col {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 1152px) {
-  .container\:bg-\[position\:80\%_100\%\] {
-    background-position: 80% 100%;
+  .container\:left-\[calc\(50\%-200px\)\] {
+    left: calc(50% - 200px);
+  }
+
+  .container\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .container\:max-w-\[400px\] {
+    max-width: 400px;
+  }
+
+  .container\:gap-4 {
+    gap: 1rem;
+  }
+
+  .container\:bg-\[position\:80\%_-400px\] {
+    background-position: 80% -400px;
+  }
+
+  .container\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .container\:pt-\[400px\] {
+    padding-top: 400px;
+  }
+
+  .container\:text-center {
+    text-align: center;
   }
 }
