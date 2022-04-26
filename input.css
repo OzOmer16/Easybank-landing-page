@@ -63,5 +63,12 @@
         @apply fill-primaryLimeGreen
     }
 
+    div.nav-menu-active{
+        @apply block
+    }
+
+    .menu-btn-active > *:first-child{
+        @apply hidden
+    }
 
   }
