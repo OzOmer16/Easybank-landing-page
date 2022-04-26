@@ -4,11 +4,11 @@
 
 @layer base{
    html{
-        @apply min-h-full p-0 m-0 box-border
+        @apply min-h-full p-0 m-0 box-border overflow-x-hidden
    }
 
    body{
-        @apply min-h-full text-lg 
+        @apply min-h-full text-lg overflow-x-hidden
    }
 
    img{
@@ -70,5 +70,14 @@
     .menu-btn-active > *:first-child{
         @apply hidden
     }
+
+    img.custom-large-media {
+        @apply max-w-[80%]
+    }
+
+    img.custom-small-media {
+        @apply !max-w-[100%]
+    }
+    
 
   }

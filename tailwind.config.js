@@ -1,9 +1,6 @@
 module.exports = {
-  mode: 'jit',
-  content: [
-    './**/*.html',
-    './**/*.{js,jsx,ts,tsx,vue}',
-  ],
+  mode: "jit",
+  content: ["./*.html", "./*.js"],
   theme: {
     extend: {
       colors: {
@@ -24,7 +21,8 @@ module.exports = {
         customTablet: { 'raw': '(max-width: 540px)' },
         customLgTablet: { 'raw': '(max-width: 800px)' },
         container: { 'raw': '(max-width: 1152px)' },
-        customDesktop: { 'raw': '(max-width: 1440px)' }
+        customDesktop: { 'raw': '(max-width: 1440px)' },
+        customXXLDesktop: { 'raw': '(min-width: 1800px)' }
       }
       
     },
